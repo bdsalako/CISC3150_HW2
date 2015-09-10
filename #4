@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class BreakOut{
+	public static void main(String[] arg){
+		int product = 0;
+		int [] arr = {3, 6};
+		int [] arr1 = {3, 2, 3, 4, 5, 6, 3, 9, 6};
+	
+		OUTER:
+		//loop returns here to look for occurence of elementS of arr in arr1 ONCE and stop
+		for(int i = 0; i <2; i++){
+			for(int j = 0; j <8; j++){
+				if(arr[i] == arr1[j]){
+					System.out.println(arr[i] + " is found at " + " arr1[" + j + "]");
+					continue OUTER;	
+				}
+				
+			}
+
+		
+		}
+		System.out.println("\nThe result of the second loop demostration.");
+		//Another loop demostration
+		for(int i = 0; i <2; i++){
+			INNER:
+			//loop returns here to look for EVERY occurence of elementS of arr in arr1
+			for(int j = 0; j <8; j++){
+				if(arr[i] == arr1[j]){
+					System.out.println(arr[i] + " is found at " + " arr1[" + j + "]");
+					continue INNER;	
+				}
+			}
+		}
+
+	}
+}
