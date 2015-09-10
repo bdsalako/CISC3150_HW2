@@ -1,0 +1,80 @@
+//import java.util.String;
+public class Calenda{
+	public static void main(String[] arg){
+		int numDayMonth = 29;
+		int numDayYear;
+		int dayCounter;
+		int weekDayCounter = 7;
+		//String monthOfYear = "Febuary";
+		int monthCounter = 1;
+		int counter = 1;
+		int beginDay =0;
+		
+		System.out.printf("%30s","February");
+		System.out.println("\n");
+		System.out.printf("%-10s%-10s%-10s%-10s%-10s%-10s%-10s","Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat");
+		System.out.println("\n");
+		MonthCase(31, );
+		
+	}
+		
+
+	public static void MonthCase(numDayMonth, beginDay){
+		while(counter < numDayMonth ){
+			for(int i =1; i<=weekDayCounter; i++){
+				//to skip days
+				if(beginDay >1)
+					for(int j =0; j < beginDay; j++)
+						System.out.printf("%-10d"," " );
+				System.out.printf("%-10d", counter++);
+				if(counter == numDayMonth)
+					break;
+			}
+			System.out.println();
+		}
+		beginDay = numDayMonth%7 + 1;
+		counter = 0;
+		monthCounter++;
+		numDayMonth = MonthSwitch(monthCounter);
+		MonthCase(numDayMonth, beginDay);
+	}
+	
+	public static int MonthSwitch(x){
+		int numberofdays;
+		Switch(x){
+		case 1: 
+			numberofdays = 31;
+			break;
+		case 2: 
+			if(isLeap)
+				numberofdays = 29;
+			
+			numberofdays = 31;
+			break;
+		case 1: 
+			numberofdays = 31;
+			break;
+		case 1: 
+			numberofdays = 31;
+			break;
+		case 1: 
+			numberofdays = 31;
+			break;
+		case 1: 
+			numberofdays = 31;
+			break;
+		case 1: 
+			numberofdays = 31;
+			break;
+		case 1: 
+			numberofdays = 31;
+			break;
+		case 1: 
+			numberofdays = 31;
+			break;
+		case 1: 
+			numberofdays = 31;
+			break;
+			return 31;
+	
+}
