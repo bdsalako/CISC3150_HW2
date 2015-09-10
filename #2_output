@@ -1,0 +1,24 @@
+
+C:\OBJ\HW2>java Palindrome
+Enter a word: word
+word is not palindrome
+
+Enter a word: Test
+Test is not palindrome
+
+Enter a word: wow
+wow is palindrome
+
+Enter a word: mum
+mum is palindrome
+
+Enter a word: dad
+dad is palindrome
+
+Enter a word: David
+David is not palindrome
+
+Enter a word: School
+School is not palindrome
+
+Enter a word:
